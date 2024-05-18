@@ -4,6 +4,7 @@ import TabsPage from "../views/TabsPage.vue";
 import RegistroPage from "../views/RegistroPage.vue";
 import InicioPage from "@/views/InicioPage.vue";
 import Escanearqr from "@/views/Escanearqr.vue";
+import InicioPageEstudiantes from "@/views/Estudiantes/InicioPageEstudiantes.vue";
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -24,7 +25,10 @@ const routes: Array<RouteRecordRaw> = [
     path: "/inicio",
     component: InicioPage,
   },
-
+  {
+    path: "/estudiantes",
+    component: InicioPageEstudiantes 
+  },
   {
     path: "/tabs/",
     component: TabsPage,

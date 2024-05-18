@@ -14,8 +14,6 @@
             <ion-input-password-toggle slot="end"></ion-input-password-toggle>
         </ion-input>
         <ion-button color="black" size="default" class="boton"><strong>Crear cuenta</strong></ion-button>
-        <div class="iniciarSesion"><strong>¿Ya tienes cuenta?<ion-router-link routerLink="/inicioPage.vue ">Iniciar
-                    sesión</ion-router-link></strong></div>
     </ion-content>
 
 
@@ -38,19 +36,13 @@ import { IonInput, IonInputPasswordToggle, IonButton } from '@ionic/vue';
 
 }
 
-.iniciarSesion {
-    text-align: center;
-    margin-bottom: 15px
-}
-
 ion-input {
     border-radius: 20px;
     background-color: #9c9b9b;
     color: #020202;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: left;
-    margin-bottom: 15px
+    margin-bottom: 15px;
+    padding: 2em;
 }
-
-
 </style>
