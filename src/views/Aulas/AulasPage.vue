@@ -7,7 +7,7 @@
     </ion-header>
     <ion-header class="menu">
       <ion-toolbar color="dark">
-        <ion-icon slot="end" name="scanCircle"></ion-icon>
+        
       </ion-toolbar>
     </ion-header>
     <ion-button color="black" expand="full" v-for="(aula, index) in aulas" :key="index">

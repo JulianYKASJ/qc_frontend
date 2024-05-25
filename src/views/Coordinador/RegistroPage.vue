@@ -1,7 +1,6 @@
 <template>
   <ion-content class="ion-padding contenido-centrado">
     <h2 class="cuenta"><strong>Crea tu cuenta</strong></h2>
-
     <ion-input placeholder="Nombres" class="text"></ion-input>
     <ion-input placeholder="Apellidos" class="text"></ion-input>
     <ion-input placeholder="Documento" class="text"></ion-input>
@@ -48,21 +47,18 @@ import { IonInput, IonInputPasswordToggle, IonButton } from "@ionic/vue";
   padding-bottom: 10px;
   margin-bottom: 20px;
 }
-
 .boton {
   border-radius: 20px;
   display: flex;
   padding: 4px;
   background-color: black;
 }
-
 .iniciarSesion {
   position: absolute;
   top: 90%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
 ion-input {
   border-radius: 20px;
   background-color: #91828259;
@@ -71,7 +67,6 @@ ion-input {
   text-align: left;
   margin-bottom: 15px;
 }
-
 .text {
   --padding-start: 0px;
   --padding-end: 0px;
