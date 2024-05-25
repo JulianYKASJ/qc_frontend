@@ -4,7 +4,9 @@ import TabsPage from "../views/TabsPage.vue";
 import RegistroPage from "../views/Coordinador/RegistroPage.vue";
 import InicioPage from "@/views/Estudiante/InicioPage.vue";
 import Escanearqr from "@/views/Estudiante/Escanearqr.vue";
-import AulasPage from "@/views/Aulas/AulasPage.vue";
+import AulasPage from "@/views/Coordinador/AulasPage.vue";
+
+import PruebasPage from '@/views/PruebasPage.vue';
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -30,6 +32,10 @@ const routes: Array<RouteRecordRaw> = [
     path: "/aulas",
     component:AulasPage ,
   },
+  {
+    path: '/pruebas',
+    component: PruebasPage
+  },
 
   {
     path: "/tabs/",
@@ -53,7 +59,7 @@ const routes: Array<RouteRecordRaw> = [
       },
       {
         path: "tab4",
-        component: () => import("@/views/Aulas/AulasPage.vue"),
+        component: () => import("@/views/Coordinador/AulasPage.vue"),
       },
     ],
   },
