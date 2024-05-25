@@ -4,6 +4,7 @@ import TabsPage from "../views/TabsPage.vue";
 import RegistroPage from "../views/RegistroPage.vue";
 import InicioPage from "@/views/InicioPage.vue";
 import Escanearqr from "@/views/Escanearqr.vue";
+import AulasPage from "@/views/AulasPage.vue";
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -26,6 +27,11 @@ const routes: Array<RouteRecordRaw> = [
   },
 
   {
+    path: "/aulas",
+    component:AulasPage ,
+  },
+
+  {
     path: "/tabs/",
     component: TabsPage,
     children: [
@@ -44,6 +50,10 @@ const routes: Array<RouteRecordRaw> = [
       {
         path: "tab3",
         component: () => import("@/views/Escanearqr.vue"),
+      },
+      {
+        path: "tab4",
+        component: () => import("@/views/AulasPage.vue"),
       },
     ],
   },
