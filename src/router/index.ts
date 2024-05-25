@@ -1,10 +1,10 @@
 import { createRouter, createWebHistory } from "@ionic/vue-router";
 import { RouteRecordRaw } from "vue-router";
 import TabsPage from "../views/TabsPage.vue";
-import RegistroPage from "../views/RegistroPage.vue";
-import InicioPage from "@/views/InicioPage.vue";
-import Escanearqr from "@/views/Escanearqr.vue";
-import AulasPage from "@/views/AulasPage.vue";
+import RegistroPage from "../views/Coordinador/RegistroPage.vue";
+import InicioPage from "@/views/Estudiante/InicioPage.vue";
+import Escanearqr from "@/views/Estudiante/Escanearqr.vue";
+import AulasPage from "@/views/Aulas/AulasPage.vue";
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -41,19 +41,19 @@ const routes: Array<RouteRecordRaw> = [
       },
       {
         path: "tab1",
-        component: () => import("@/views/RegistroPage.vue"),
+        component: () => import("@/views/Coordinador/RegistroPage.vue"),
       },
       {
         path: "tab2",
-        component: () => import("@/views/InicioPage.vue"),
+        component: () => import("@/views/Estudiante/InicioPage.vue"),
       },
       {
         path: "tab3",
-        component: () => import("@/views/Escanearqr.vue"),
+        component: () => import("@/views/Estudiante/Escanearqr.vue"),
       },
       {
         path: "tab4",
-        component: () => import("@/views/AulasPage.vue"),
+        component: () => import("@/views/Aulas/AulasPage.vue"),
       },
     ],
   },
