@@ -1,16 +1,18 @@
 <template>
-    <ion-content class="ion-padding">
-      <h1><strong>PULSA EL BOTON PARA ESCANEAR EL QR</strong></h1>
+  <ion-content class="ion-padding">
+    <h1><strong>PULSA EL BOTON PARA ESCANEAR EL QR</strong></h1>
+    <div class="nav">
       <ion-header>
-  <ion-toolbar class="nav">
-    <ion-title>
-      ICONO
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+        <ion-toolbar>
+          <ion-title>
+            LOGO
+          </ion-title>
+        </ion-toolbar>
+      </ion-header>
+    </div>
 
-    </ion-content>
-  
+  </ion-content>
+
 </template>
 
 <script setup lang="ts">
@@ -20,20 +22,14 @@ import ExploreContainer from '@/components/ExploreContainer.vue';
 
 
 <style>
-h1{
+h1 {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: xx-large;
-    text-align: center;
+  font-size: xx-large;
+  text-align: center;
 }
 
-.nav{
-position: fixed;
-bottom: 0;
-width: 100%;
-text-align: center;
-}
 </style>
